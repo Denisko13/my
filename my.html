@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>Про мене - Сайт Дениса</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <div class="logo-container">
+            <img src="images/logo.jpg" alt="Мій логотип">
+        </div>
+    </div>
+</header>
+
+<nav>
+    <div class="container">
+        <ul>
+            <li><a href="index.html" class="active">Головна</a></li>
+            <li><a href="my.html">Про мене</a></li>
+            <li><a href="my2.html">Контакти</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main class="container">
+
+    <h2 class="page-title">Моя історія</h2>
+    </section>
+    <section class="content-row">
+        <div class="text-col">
+            <h3>Хто я?</h3>
+            <p>Мене звати Денис. Я студент, який розвивається у сфері ІТ та впевнено рухається вперед. Мене цікавлять технології, логіка та практичні рішення, які працюють у реальних задачах. Постійно навчаюсь, удосконалюю навички та прагну професійного зростання.</p>
+        </div>
+        <div class="image-col">
+            <img src="images/1.jpg" alt="Моє фото">
+       </div>
+    </section>
+        </div>
+
+    <section class="content-row">
+        <div class="text-col">
+            <h3>Технічна сторона</h3>
+            <p>Я зосереджений на практичній частині ІТ. Вивчаю HTML, CSS та основи Python, щоб розуміти, як працюють сайти й логіка програм. Для мене важливо не просто повторювати приклади, а реально розбиратися, як усе влаштовано та застосовувати це на практиці.</p>
+        </div>
+        <div class="image-col">
+            <img src="images/3.jpg" alt="Код на екрані">
+        </div>
+    </section>
+    
+    <section class="content-row reverse">
+        <div class="text-col">
+            <h3>Поза роботою</h3>
+            <p>Життя — це не тільки код! У вільний час люблю перезавантажити мозок комп’ютерними іграми, гуляти з друзями і черпати натхнення навколо. Планую прокачувати свої навички, щоб колись запустити власну справу.</p>
+        </div>
+        <div class="image-col">
+            <img src="images/4.jpg" alt="Моє хобі">
+        </div>
+    </section>
+    
+    <section>
+        <h2 class="page-title">Мій набір інструментів</h2>
+        <ul class="skills-list">
+            <li>HTML</li>
+            <li>Python (Основи)</li>
+        </ul>
+    </section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 </p>
+    </div>
+</footer>
+
+<script>
+    const themeToggle = document.getElementById('theme-toggle');
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }
+    themeToggle.addEventListener('click', () => {
+        let theme = document.documentElement.getAttribute('data-theme');
+        if (theme === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+        } else {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+        }
+    });
+</script>
+
+</body>
+</html>
